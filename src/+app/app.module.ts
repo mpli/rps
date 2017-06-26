@@ -2,8 +2,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { HomeModule } from './+home/home.module';
-import { AboutModule } from './+about/about.module';
-import { TodoModule } from './+todo/todo.module';
+import { CommitModule } from './+commit/commit.module';
+import { ServiceModule } from './+service/service.module';
+import { ReviewModule } from './+review/review.module';
+import { ContactModule } from './+contact/contact.module';
+import { PoolTipModule } from './+pool-tip/pool-tip.module';
+import { LinkModule } from './+link/link.module';
 
 import { SharedModule } from './shared/shared.module';
 
@@ -16,8 +20,12 @@ import { AppComponent, XLargeDirective } from './app.component';
   imports: [
     SharedModule,
     HomeModule,
-    AboutModule,
-    TodoModule,
+    CommitModule,
+    ServiceModule,
+    ReviewModule,
+    ContactModule,
+    PoolTipModule,
+    LinkModule,
     AppRoutingModule
   ]
 })

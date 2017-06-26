@@ -3,10 +3,10 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/
 @Component({
     changeDetection: ChangeDetectionStrategy.Default,
     encapsulation: ViewEncapsulation.Emulated,
-    selector: 'home',
-    styleUrls: [ './home.component.css' ],
-    templateUrl: './home.component.html'
+    selector: 'links',
+    styleUrls: [ './link.component.css' ],
+    templateUrl: './link.component.html'
 })
-export class HomeComponent {
+export class LinkComponent {
     constructor() { }
 }

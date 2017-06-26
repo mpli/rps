@@ -12,15 +12,28 @@
 
   <link rel="prerender" href="http://localhost:3000/lazy">
   <link rel="preload" href="/assets/logo.png">
+  <link rel="stylesheet" href="./assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
   <base href="/">
 
 </head>
 <body>
 
-  <app>
+  <app style="position:absolute; min-height:100vh; width:100%" id="app">
     Loading Universal ...
   </app>
 
+  <script async>
+    function adjust_footer() {
+      var footer_height = document.getElementById('footer').offsetHeight;
+      document.getElementById('app').style.paddingBottom = footer_height + "px";
+    }
+    adjust_footer();
+    window.onresize = adjust_footer;
+  </script>
+
   <script async src="/main.bundle.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

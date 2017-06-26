@@ -1,0 +1,166 @@
+{
+	"services": 
+		{
+			"service":
+				[
+					{
+						"serviceID" : "1",
+						"serviceName" : "Chemical Only Service",
+						"servicePrice" : "65.00",
+						"billPeriod" : "Monthly",
+						"serviceDescription" : "<p>Having proper chemical balance is important to maintain the life of your equipment and the health of your family. Instead of buying stockpiles of chemicals and test kits, you can let us maintain the chemical balance of your pool through weekly testing and adjustment. <strong>For only $65 \/ month<\/strong>, each week we will:<\/p>"
+						,
+						"serviceDetails" :
+							{
+								"serviceDetail" :
+									[
+										{
+											"serviceDetailID" : "1",
+											"detailLine" : "Test your water for proper chemical levels."
+										}, 
+										{
+											"serviceDetailID" : "2",
+											"detailLine" : "Add chemicals as needed to balance your water at no extra cost to you. This includes Chlorine, Soda Ash, Bicarbonate, Muriatic Acid, and basic Algaecide as needed. Optional water treatments like PoolRx, Nature2, Pool Frog cartridges, or salt in the case of a salt chlorinator system, are not included in the price but can be provided for additional cost."
+										}, 
+										{
+											"serviceDetailID" : "3",
+											"detailLine" : "In the spring, we will test for and add Cyanuric Acid and Calcium Chloride as needed, if it is in  reasonable quantities due to normal loss caused by winter rain season. Some pool companies charge extra for this spring tune-up service. We do not."
+										}
+									]
+							}
+					},
+					{
+						"serviceID" : "2",
+						"serviceName" : "Chemical Plus Service",
+						"servicePrice" : "85.00",
+						"billPeriod" : "Monthly",
+						"serviceDescription" : "<p>In addition to maintaining proper water balance, it is also important to maintain your equipment in good running condition. We will perform Basic Chemical Service and also routine maintenance tasks, like emptying your baskets and sweep bag, and we will clean your filter as needed. <strong>For only $85 \/ month<\/strong>, each week we will:<\/p>",
+						"serviceNotes" : "",
+						"serviceDetails" :
+							{
+								"serviceDetail" :
+									[
+										{
+											"serviceDetailID" : "1",
+											"detailLine" : "Perform all items in our Chemical Only Service level."
+										}, 
+										{
+											"serviceDetailID" : "4",
+											"detailLine" : "Empty sweep bag and inspect your automatic pool sweep and pool cleaner feed filter."
+										},
+										{
+											"serviceDetailID" : "5",
+											"detailLine" : "Empty the pump basket."
+										},
+										{
+											"serviceDetailID" : "6",
+											"detailLine" : "Empty the skimmer baskets."
+										},
+										{
+											"serviceDetailID" : "7",
+											"detailLine" : "Check your filter \/ filter pressure and backwash (DE or Sand Filters) or disassemble and spray out (Cartridge Filters or DE filters) as needed."
+										},
+										{
+											"serviceDetailID" : "8",
+											"detailLine" : "Visually inspect equipment for proper operation. We can perform small repairs or small part replacements automatically, or if you prefer, let you know what is needed and wait for your approval."
+										},
+										{
+											"serviceDetailID" : "9",
+											"detailLine" : "Make seasonal adjustments or recommendations for timer box settings."
+										},
+										{
+											"serviceDetailID" : "10",
+											"detailLine" : "If you have  solar heating, we will turn it off and drain the solar panels (only if drain spigots are reachable without a ladder) for winter and turn it on for summer."
+										},
+										{
+											"serviceDetailID" : "11",
+											"detailLine" : "Less than $5\/week more than the Chemical Only Service!"
+										}
+									]
+							}
+					},
+					{
+						"serviceID" : "3",
+						"serviceName" : "Chemical Plus and Brush Service",
+						"servicePrice" : "105.00",
+						"billPeriod" : "Monthly",
+						"serviceDescription" : "<p>In addition to maintaining proper water balance and maintaining your equipment in good running condition, it is also important to brush steps, swim outs and spa seats on a weekly basis and ocasionally pool walls. We will perform our Chemical Plus Service and also we will do required brushing. Most pools will be kept perfectly clean with this service level. This is our most popular service level requested by our customers. <strong>For only $105 \/ month<\/strong>, each week we will:<\/p>",
+						"serviceNotes" : "",
+						"serviceDetails" :
+							{
+								"serviceDetail" :
+									[
+										{
+											"serviceDetailID" : "1",
+											"detailLine" : "Perform all items in our Chemical Only and Chemical Plus Service levels."
+										}, 
+										{
+											"serviceDetailID" : "12",
+											"detailLine" : "Brush the steps, swim outs and connected spa surfaces using a brush or net."
+										},
+										{
+											"serviceDetailID" : "13",
+											"detailLine" : "Brush pool walls or skim the pool edges only, as needed."
+										},
+										{
+											"serviceDetailID" : "11",
+											"detailLine" : "Less than $5\/week more than the Chemical Plus service!"
+										}
+									]
+							}
+					},
+					{
+						"serviceID" : "4",
+						"serviceName" : "Full Clean Service",
+						"servicePrice" : "125.00",
+						"billPeriod" : "Monthly",
+						"serviceDescription" : "<p>Our full weekly maintenance includes everything you need to keep your pool up and running perfectly. When we leave, the pool will be perfectly clean. <strong>For only $125 \/ month<\/strong>, each week we will:<\/p>",
+						"serviceNotes" : "",
+						"serviceDetails" :
+							{
+								"serviceDetail" :
+									[
+										{
+											"serviceDetailID" : "1",
+											"detailLine" : "Perform all items in our Chemical Only, Chemical Plus, Chemical Plus and Brush Service levels."
+										}, 
+										{
+											"serviceDetailID" : "14",
+											"detailLine" : "Skim pool and connected spa surface to clean."
+										},
+										{
+											"serviceDetailID" : "15",
+											"detailLine" : "Remove any debris from the pool bottom and connected spa."
+										},
+										{
+											"serviceDetailID" : "16",
+											"detailLine" : "Vacuum the bottom of your pool and connected spa if needed."
+										},
+										{
+											"serviceDetailID" : "17",
+											"detailLine" : "Less than $5\/week more than the Chemical Plus and Brush Service!"
+										}
+									]
+							}
+					},
+					{
+						"serviceID" : "5",
+						"serviceName" : "Custom Service",
+						"servicePrice" : "quote",
+						"billPeriod" : "Monthly",
+						"serviceDescription" : "<p>We can provide you with customized weekly service if one of our service offerings above does not fit your needs. You can choose what you want us to do depending on what you are willing do to keep your pool in good shape.<\/p>",
+						"serviceNotes" : "",
+						"serviceDetails" :
+							{
+								"serviceDetail" :
+									[
+										{
+											"serviceDetailID" : "1",
+											"detailLine" : "Please call to inquire."
+										}
+									]
+							}
+					}
+				]
+		}
+}
