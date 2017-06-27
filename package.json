@@ -44,9 +44,7 @@
     "preboot": "~4.5.2",
     "rxjs": "5.0.0-beta.12",
     "webfontloader": "^1.6.26",
-    "zone.js": "~0.6.26"
-  },
-  "devDependencies": {
+    "zone.js": "~0.6.26",
     "@types/morgan": "^1.7.32",
     "@types/body-parser": "0.0.29",
     "@types/compression": "0.0.29",
