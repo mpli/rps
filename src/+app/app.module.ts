@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Title }  from '@angular/platform-browser';
 
 import { HomeModule } from './+home/home.module';
 import { CommitModule } from './+commit/commit.module';
@@ -17,6 +18,9 @@ import { AppComponent, XLargeDirective } from './app.component';
 
 @NgModule({
   declarations: [ AppComponent, XLargeDirective ],
+  providers: [
+    Title
+  ],
   imports: [
     SharedModule,
     HomeModule,

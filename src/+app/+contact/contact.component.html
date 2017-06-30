@@ -1,6 +1,69 @@
 <div class="container">
+  <div class="panel panel-primary" id="contact-us">
+    <div class="panel-heading">Contact Us</div>
+    <div class="panel-body">
+      <form class="form-horizontal">
+        
+        <div class="form-group">
+          <label for="name" class="col-sm-2 control-label">Name <span class="text-danger">*</span></label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="name" placeholder="Marian Pliczka" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="address" class="col-sm-2 control-label">Address</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="address" placeholder="1003 Topaz Ct., Roseville, CA 95661">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="col-sm-2 control-label">Email <span class="text-danger">*</span></label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" placeholder="service@rosevillepoolservice.com" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="phone" class="col-sm-2 control-label">Phone</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="phone" placeholder="916-791-1221">
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="service_type" class="col-sm-2 control-label">Service Type</label>
+          <div class="col-sm-10">
+            <select class="form-control" id="service_type">
+              <option>Chemical Only</option>
+              <option>Chemical Plus</option>
+              <option>Chemical Plus and Brush</option>
+              <option>Full Clean</option>
+              <option>Custom</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="note" class="col-sm-2 control-label">Notes <span class="text-danger">*</span></label>
+          <div class="col-sm-10">
+            <textarea class="form-control" id="note" required></textarea>
+          </div>
+        </div> 
+
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Send Message</button>
+          </div>
+        </div>  
+
+      </form>
+    </div>
+  </div>
+
   <div class="row">
-    <div class="col-xs-12">
+    <div class="col-xs-12 text-center">
       Please contact us by calling us at 916-791-1221. Or you can email us your service request at <a href="mailto:service@rosevillepoolservice.com">service@rosevillepoolservice.com</a>.
     </div>
   </div>

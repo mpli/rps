@@ -1,5 +1,7 @@
 import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
 
+import { Title } from '@angular/platform-browser';
+
 @Component({
     changeDetection: ChangeDetectionStrategy.Default,
     encapsulation: ViewEncapsulation.Emulated,
@@ -8,5 +10,11 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/
     templateUrl: './home.component.html'
 })
 export class HomeComponent {
-    constructor() { }
+    constructor(private titleService: Title ) {
+        this.setTitle("Home");
+    }
+
+    public setTitle( newTitle: string ) {
+        this.titleService.setTitle( newTitle );
+    }
 }

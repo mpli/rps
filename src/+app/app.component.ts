@@ -25,9 +25,10 @@ export class XLargeDirective {
   styles: [`
     * { padding:0; margin:0; font-family: 'Droid Sans', sans-serif; }
     #universal { text-align:center; font-weight:bold; padding:15px 0; }
-    nav { background:rgb(86, 185, 214); min-height:40px; }
-    nav a { font-weight:bold; text-decoration:none; color:#fff; padding:20px; display:inline-block; transition:0.3s; }
-    nav a:hover { background:rgb(119, 205, 231); }
+    #navbar-mobile { background:rgb(86, 185, 214); min-height:40px; }
+    #navbar-mobile a { font-weight:bold; text-decoration:none; color:#fff; padding:20px; display:inline-block; transition:0.3s; width:100%; }
+    #navbar-mobile a:hover, #navbar-mobile a:focus { background:rgb(119, 205, 231); }
+    #hamburger-menu { font: normal normal normal 24px/1 FontAwesome; }
     .hero-universal { min-height:500px; display:block; padding:20px; }
     .inner-hero { background:rgba(255, 255, 255, 0.75); border:5px #ccc solid; padding:25px; }
     .router-link-active { background-color: rgb(119, 205, 231); }
@@ -38,15 +39,64 @@ export class XLargeDirective {
   `],
   template: `
   <img itemprop="image" src="../assets/image/roseville_pool_service_logo5.png" alt="Roseville Pool Service">
-  <nav>
-    <a routerLinkActive="router-link-active" routerLink="home">Home</a>
-    <a routerLinkActive="router-link-active" routerLink="commit">Commitment</a>
-    <a routerLinkActive="router-link-active" routerLink="weekly-services">Weekly Services</a>
-    <a routerLinkActive="router-link-active" routerLink="reviews">Reviews</a>
-    <a routerLinkActive="router-link-active" routerLink="contact-us">Contact Us</a>
-    <a routerLinkActive="router-link-active" routerLink="pool-tips">Pool Tips</a>
-    <a routerLinkActive="router-link-active" routerLink="links">Links</a>
-  </nav>
+
+  <div class="navbar navbar-default">
+      <div class="navbar-header">
+          <!-- <a class="navbar-brand" href="index.html">Roseville Pool Service</a> -->
+          <ul class="nav navbar-nav pull-right visible-xs-block">
+              <li>
+                <a onClick="hideContent()" data-toggle="collapse" data-target="#navbar-mobile">
+                  <i class="fa fa-bars" id="hamburger-menu" aria-hidden="true"></i>
+                </a>
+              </li>
+          </ul>
+      </div>
+
+      <div class="navbar-collapse collapse" id="navbar-mobile">
+          <ul class="nav navbar-nav navbar-left">
+              <li>
+                <a routerLinkActive="router-link-active" routerLink="home">Home</a>
+              </li>
+
+              <li>
+                <a routerLinkActive="router-link-active" routerLink="commit">Commitment</a>
+              </li>
+
+              <li>
+                <a routerLinkActive="router-link-active" routerLink="weekly-services">Weekly Services</a>
+              </li>
+
+              <li>
+                <a routerLinkActive="router-link-active" routerLink="reviews">Reviews</a>
+              </li>
+
+              <li>
+                <a routerLinkActive="router-link-active" routerLink="contact-us">Contact Us</a>
+              </li>
+
+              <li>
+                <a routerLinkActive="router-link-active" routerLink="pool-tips">Pool Tips</a>
+              </li>
+
+              <li>
+                <a routerLinkActive="router-link-active" routerLink="links">Links</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+
+  <!--
+    <nav>
+      <a routerLinkActive="router-link-active" routerLink="home">Home</a>
+      <a routerLinkActive="router-link-active" routerLink="commit">Commitment</a>
+      <a routerLinkActive="router-link-active" routerLink="weekly-services">Weekly Services</a>
+      <a routerLinkActive="router-link-active" routerLink="reviews">Reviews</a>
+      <a routerLinkActive="router-link-active" routerLink="contact-us">Contact Us</a>
+      <a routerLinkActive="router-link-active" routerLink="pool-tips">Pool Tips</a>
+      <a routerLinkActive="router-link-active" routerLink="links">Links</a>
+    </nav>
+  -->
+
   <div class="hero-universal">
       <main>
         <router-outlet></router-outlet>
