@@ -25,10 +25,10 @@ export class XLargeDirective {
   styles: [`
     * { padding:0; margin:0; font-family: 'Droid Sans', sans-serif; }
     #universal { text-align:center; font-weight:bold; padding:15px 0; }
-    #navbar-mobile { background:rgb(86, 185, 214); min-height:40px; }
+    #menu { background:rgb(86, 185, 214); min-height:40px; }
     #navbar-mobile a { font-weight:bold; text-decoration:none; color:#fff; padding:20px; display:inline-block; transition:0.3s; width:100%; }
     #navbar-mobile a:hover, #navbar-mobile a:focus { background:rgb(119, 205, 231); }
-    #hamburger-menu { font: normal normal normal 24px/1 FontAwesome; }
+    #hamburger-menu { font: normal normal normal 24px/1 FontAwesome; padding:8px; color:white; }
     .hero-universal { min-height:500px; display:block; padding:20px; }
     .inner-hero { background:rgba(255, 255, 255, 0.75); border:5px #ccc solid; padding:25px; }
     .router-link-active { background-color: rgb(119, 205, 231); }
@@ -40,12 +40,12 @@ export class XLargeDirective {
   template: `
   <img itemprop="image" src="../assets/image/roseville_pool_service_logo5.png" alt="Roseville Pool Service">
 
-  <div class="navbar navbar-default">
+  <div class="navbar navbar-default" id="menu">
       <div class="navbar-header">
           <!-- <a class="navbar-brand" href="index.html">Roseville Pool Service</a> -->
           <ul class="nav navbar-nav pull-right visible-xs-block">
               <li>
-                <a onClick="hideContent()" data-toggle="collapse" data-target="#navbar-mobile">
+                <a data-toggle="collapse" data-target="#navbar-mobile">
                   <i class="fa fa-bars" id="hamburger-menu" aria-hidden="true"></i>
                 </a>
               </li>
