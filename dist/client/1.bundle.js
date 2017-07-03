@@ -6,7 +6,7 @@ webpackJsonp([1],{
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var shared_module_1 = __webpack_require__(48);
+var shared_module_1 = __webpack_require__(42);
 var lazy_component_1 = __webpack_require__(475);
 var lazy_routing_module_1 = __webpack_require__(476);
 var LazyModule = (function () {

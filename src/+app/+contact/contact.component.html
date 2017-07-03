@@ -1,42 +1,46 @@
 <div class="container">
+
+  <div class="alert alert-success" role="alert" *ngIf="status==1">Service request sent successfully!</div>
+  <div class="alert alert-danger" role="alert" *ngIf="status==-1">Whoops! Something went wrong. Try again later.</div>
+
   <div class="panel panel-primary" id="contact-us">
     <div class="panel-heading">Contact Us</div>
     <div class="panel-body">
-      <form class="form-horizontal">
+      <form role="form" method="post" id="form1" name="form1" class="form-horizontal" validate="true" #form="ngForm" (ngSubmit)="onSubmit(form.value)">
         
         <div class="form-group">
           <label for="name" class="col-sm-2 control-label">Name <span class="text-danger">*</span></label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="name" placeholder="Marian Pliczka" required>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Marian Pliczka" ngModel required>
           </div>
         </div>
 
         <div class="form-group">
           <label for="address" class="col-sm-2 control-label">Address</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="address" placeholder="1003 Topaz Ct., Roseville, CA 95661">
+            <input type="text" class="form-control" id="address" name="address" placeholder="1003 Topaz Ct., Roseville, CA 95661" ngModel>
           </div>
         </div>
 
         <div class="form-group">
           <label for="email" class="col-sm-2 control-label">Email <span class="text-danger">*</span></label>
           <div class="col-sm-10">
-            <input type="email" class="form-control" id="email" placeholder="service@rosevillepoolservice.com" required>
+            <input type="email" class="form-control" id="email" name="email" placeholder="service@rosevillepoolservice.com" ngModel required>
           </div>
         </div>
 
         <div class="form-group">
           <label for="phone" class="col-sm-2 control-label">Phone</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="phone" placeholder="916-791-1221">
+            <input type="text" class="form-control" id="phone" name="phone" placeholder="916-791-1221" ngModel>
           </div>
         </div>
         
         <div class="form-group">
-          <label for="service_type" class="col-sm-2 control-label">Service Type</label>
+          <label for="service_type" class="col-sm-2 control-label">Service Type <span class="text-danger">*</span></label>
           <div class="col-sm-10">
-            <select class="form-control" id="service_type">
-              <option>Chemical Only</option>
+            <select class="form-control" id="service_type" name="service_type" ngModel required>
+              <option selected>Chemical Only</option>
               <option>Chemical Plus</option>
               <option>Chemical Plus and Brush</option>
               <option>Full Clean</option>
@@ -48,7 +52,7 @@
         <div class="form-group">
           <label for="note" class="col-sm-2 control-label">Notes <span class="text-danger">*</span></label>
           <div class="col-sm-10">
-            <textarea class="form-control" id="note" required></textarea>
+            <textarea class="form-control" id="note" name="note" ngModel required></textarea>
           </div>
         </div> 
 

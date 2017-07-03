@@ -49,6 +49,9 @@ app.use(cookieParser('Angular 2 Universal'));
 app.use(bodyParser.json());
 app.use(compression());
 
+app.use(bodyParser.urlencoded({ extended: true }));
+
+
 app.use(morgan('dev'));
 
 function cacheControl(req, res, next) {
@@ -64,10 +67,11 @@ app.use(cacheControl, express.static(path.join(ROOT, 'dist/client'), {index: fal
 /////////////////////////
 // ** Example API
 // Notice API should be in aseparate process
-import { serverApi, createTodoApi } from './backend/api';
+import { serverApi, createTodoApi, sendMailApi } from './backend/api';
 // Our API for demos only
 app.get('/data.json', serverApi);
 app.use('/api', createTodoApi());
+app.post("/api/send", sendMailApi);
 
 process.on('uncaughtException', function (err) { 
   console.error('Catching uncaught errors to avoid process crash', err);

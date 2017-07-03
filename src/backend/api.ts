@@ -1,9 +1,11 @@
 var util = require('util');
 var {Router} = require('express');
+var striptags = require('striptags');
 
 // Our API for demos only
 import {fakeDataBase} from './db';
 import {fakeDemoRedisCache} from './cache';
+const nodemailer = require('nodemailer');
 
 // you would use cookies/token etc
 var USER_ID = 'f9d98cf1-1b96-464e-8755-bcc2a5c09077'; // hardcoded as an example
@@ -104,3 +106,53 @@ export function createTodoApi() {
 
   return router;
 };
+
+// For send Mail
+export function sendMailApi(req, res) {
+  let message = '';
+
+  console.log(req.body.name); //returns undefined
+
+	message = '<html><body>';
+	message += '<h1>Pool Service Request</h1>';
+	message += '<table rules="all" style="border-color: #666;" cellpadding="10">';
+	// message += "<tr style=\"text-align:center;height:80px;background-color:#abc;margin:0;border:1px solid #456;border-radius:3px;padding:10px;\"><td><strong>Name:</strong> </td><td>" + striptags(req.body.name) + "</td></tr>";
+	message += "<tr><td><strong>Name:</strong> </td><td>" + striptags(req.body.name) + "</td></tr>";
+	message += "<tr><td><strong>Email:</strong> </td><td>" + striptags(req.body.email) + "</td></tr>";
+	message += "<tr><td><strong>Phone Number:</strong> </td><td>" + striptags(req.body.phone) + "</td></tr>";
+	message += "<tr><td><strong>Address:</strong> </td><td>" + striptags(req.body.address) + "</td></tr>";
+	message += "<tr><td><strong>Service type:</strong> </td><td>" + striptags(req.body.service_type) + "</td></tr>";
+	message += "<tr><td><strong>Notes:</strong> </td><td>" + striptags(req.body.note) + "</td></tr>";
+	message += "</table>";
+	message += '</body></html>';
+	message += "<br />";
+	message += "<div style=\"text-align:center; background-color:#abc; margin:0; border:1px solid #456; border-radius:3px; padding:20px;\">Service Request</div>";
+
+  let mailTo = {
+    from: `"Pool Service Request" <${req.body.email}>`,
+    to: "service@rosevillepoolservice.com",
+    subject: "We need pool service from you.",
+    html: message,
+    replyTo: req.body.email
+  };
+
+  let smtpTransport = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
+    auth: {
+      user: "21c.billgeitz@gmail.com",
+      pass: "bornin1986"
+    }
+  });
+
+  smtpTransport.sendMail(mailTo, function (error, info) {
+    if (error) {
+      console.log("Error sending mail: %s", error);
+      res.json({success:false}).end();
+    } else {
+      console.log("Message sent: " + info.messageId, info.response);
+      res.json({success:true}).end();
+    }
+  });
+}

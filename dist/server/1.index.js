@@ -7,9 +7,9 @@ exports.modules = {
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var shared_module_1 = __webpack_require__(46);
-var lazy_component_1 = __webpack_require__(455);
-var lazy_routing_module_1 = __webpack_require__(456);
+var shared_module_1 = __webpack_require__(39);
+var lazy_component_1 = __webpack_require__(457);
+var lazy_routing_module_1 = __webpack_require__(458);
 var LazyModule = (function () {
     function LazyModule() {
     }
@@ -32,7 +32,7 @@ exports.LazyModule = LazyModule;
 
 /***/ },
 
-/***/ 455:
+/***/ 457:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57,14 +57,14 @@ exports.LazyComponent = LazyComponent;
 
 /***/ },
 
-/***/ 456:
+/***/ 458:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
 var router_1 = __webpack_require__(15);
-var lazy_component_1 = __webpack_require__(455);
+var lazy_component_1 = __webpack_require__(457);
 var LazyRoutingModule = (function () {
     function LazyRoutingModule() {
     }
