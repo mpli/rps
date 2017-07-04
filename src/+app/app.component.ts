@@ -36,50 +36,17 @@ export class XLargeDirective {
     pre { font-size:12px; }
     .footer-navbar-wrapper { background-color:rgb(86, 185, 214); color:white; padding:36px 5%; position:absolute; left:0; bottom:0; right:0; }
     .centered { margin:0 auto; }
+    .navbar-toggle { background-color:rgba(0,0,0,0) !important; border-color:rgba(0,0,0,0) !important; }
   `],
   template: `
   <img itemprop="image" src="../assets/image/roseville_pool_service_logo5.png" alt="Roseville Pool Service">
 
-<header class="bs-docs-nav navbar navbar-static-top" id="top">
-    <div class="container">
-      <div class="navbar-header">
-        <button aria-controls="bs-navbar" aria-expanded="true" class="navbar-toggle" data-target="#bs-navbar" data-toggle="collapse" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a href="../" class="navbar-brand">Bootstrap</a> </div>
-      <nav class="navbar-collapse collapse in" id="bs-navbar" aria-expanded="true">
-        <ul class="nav navbar-nav">
-          <li> <a href="../getting-started/">Getting started</a>
-          </li>
-          <li> <a href="../css/">CSS</a>
-          </li>
-          <li> <a href="../components/">Components</a>
-          </li>
-          <li> <a href="../javascript/">JavaScript</a>
-          </li>
-          <li> <a href="../customize/">Customize</a>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="http://themes.getbootstrap.com" onclick="ga(&quot;send&quot;,&quot;event&quot;,&quot;Navbar&quot;,&quot;Community links&quot;,&quot;Themes&quot;)">Themes</a></li>
-          <li><a href="https://jobs.getbootstrap.com" onclick="ga(&quot;send&quot;,&quot;event&quot;,&quot;Navbar&quot;,&quot;Community links&quot;,&quot;Jobs&quot;)">Jobs</a></li>
-          <li><a href="http://expo.getbootstrap.com" onclick="ga(&quot;send&quot;,&quot;event&quot;,&quot;Navbar&quot;,&quot;Community links&quot;,&quot;Expo&quot;)">Expo</a></li>
-          <li><a href="http://blog.getbootstrap.com" onclick="ga(&quot;send&quot;,&quot;event&quot;,&quot;Navbar&quot;,&quot;Community links&quot;,&quot;Blog&quot;)">Blog</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
   <div class="navbar navbar-default" id="menu">
       <div class="navbar-header">
-        <button aria-controls="bs-navbar" aria-expanded="true" class="navbar-toggle" data-target="#bs-navbar" data-toggle="collapse" type="button">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="../" class="navbar-brand">Bootstrap</a>
           <!-- <a class="navbar-brand" href="index.html">Roseville Pool Service</a> -->
           <ul class="nav navbar-nav pull-right visible-xs-block">
               <li>
-                <button data-toggle="collapse" data-target="#navbar-mobile">
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-mobile" type="button">
                   <i class="fa fa-bars" id="hamburger-menu" aria-hidden="true"></i>
                 </button>
               </li>
