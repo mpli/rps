@@ -41647,7 +41647,8 @@ var ContactComponent = (function () {
         var params = JSON.stringify(value);
         var headers = new http_1.Headers({ "Content-Type": "application/json" });
         var options = new http_1.RequestOptions({ headers: headers });
-        this.http.post("/api/send", params, options).subscribe(function (res) {
+        this.http.post("http://rosevillepoolservice.net/action.php", params, options).subscribe(function (res) {
+            console.log(res.text());
             if (JSON.parse(res.text()).success) {
                 _this.status = 1;
             }
@@ -42386,7 +42387,7 @@ function sendMailApi(req, res) {
         secure: true,
         auth: {
             user: "21c.billgeitz@gmail.com",
-            pass: "bornin1986"
+            pass: "@@@@@"
         }
     });
     smtpTransport.sendMail(mailTo, function (error, info) {
@@ -58055,7 +58056,7 @@ var api_1 = __webpack_require__(277);
 // Our API for demos only
 app.get('/data.json', api_1.serverApi);
 app.use('/api', api_1.createTodoApi());
-app.post("/api/send", api_1.sendMailApi);
+// app.post("/api/send", sendMailApi);
 process.on('uncaughtException', function (err) {
     console.error('Catching uncaught errors to avoid process crash', err);
 });

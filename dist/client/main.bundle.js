@@ -42178,7 +42178,8 @@ var ContactComponent = (function () {
         var params = JSON.stringify(value);
         var headers = new http_1.Headers({ "Content-Type": "application/json" });
         var options = new http_1.RequestOptions({ headers: headers });
-        this.http.post("/api/send", params, options).subscribe(function (res) {
+        this.http.post("http://rosevillepoolservice.net/action.php", params, options).subscribe(function (res) {
+            console.log(res.text());
             if (JSON.parse(res.text()).success) {
                 _this.status = 1;
             }

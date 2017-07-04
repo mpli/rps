@@ -71,7 +71,7 @@ import { serverApi, createTodoApi, sendMailApi } from './backend/api';
 // Our API for demos only
 app.get('/data.json', serverApi);
 app.use('/api', createTodoApi());
-app.post("/api/send", sendMailApi);
+// app.post("/api/send", sendMailApi);
 
 process.on('uncaughtException', function (err) { 
   console.error('Catching uncaught errors to avoid process crash', err);
