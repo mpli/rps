@@ -46,7 +46,7 @@ export class XLargeDirective {
           <!-- <a class="navbar-brand" href="index.html">Roseville Pool Service</a> -->
           <ul class="nav navbar-nav pull-right visible-xs-block">
               <li>
-                <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-mobile" type="button">
+                <button #burgerButton class="navbar-toggle" data-toggle="collapse" data-target="#navbar-mobile" type="button">
                   <i class="fa fa-bars" id="hamburger-menu" aria-hidden="true"></i>
                 </button>
               </li>
@@ -56,31 +56,31 @@ export class XLargeDirective {
       <div class="navbar-collapse collapse" id="navbar-mobile">
           <ul class="nav navbar-nav navbar-left">
               <li>
-                <a routerLinkActive="router-link-active" routerLink="home">Home</a>
+                <a routerLinkActive="router-link-active" routerLink="home" (click)="burgerButton.click()">Home</a>
               </li>
 
               <li>
-                <a routerLinkActive="router-link-active" routerLink="commit">Commitment</a>
+                <a routerLinkActive="router-link-active" routerLink="commit" (click)="burgerButton.click()">Commitment</a>
               </li>
 
               <li>
-                <a routerLinkActive="router-link-active" routerLink="weekly-services">Weekly Services</a>
+                <a routerLinkActive="router-link-active" routerLink="weekly-services" (click)="burgerButton.click()">Weekly Services</a>
               </li>
 
               <li>
-                <a routerLinkActive="router-link-active" routerLink="reviews">Reviews</a>
+                <a routerLinkActive="router-link-active" routerLink="reviews" (click)="burgerButton.click()">Reviews</a>
               </li>
 
               <li>
-                <a routerLinkActive="router-link-active" routerLink="contact-us">Contact Us</a>
+                <a routerLinkActive="router-link-active" routerLink="contact-us" (click)="burgerButton.click()">Contact Us</a>
               </li>
 
               <li>
-                <a routerLinkActive="router-link-active" routerLink="pool-tips">Pool Tips</a>
+                <a routerLinkActive="router-link-active" routerLink="pool-tips" (click)="burgerButton.click()">Pool Tips</a>
               </li>
 
               <li>
-                <a routerLinkActive="router-link-active" routerLink="links">Links</a>
+                <a routerLinkActive="router-link-active" routerLink="links" (click)="burgerButton.click()">Links</a>
               </li>
           </ul>
       </div>
