@@ -28,7 +28,7 @@ export class XLargeDirective {
     #menu { background:rgb(86, 185, 214); min-height:40px; }
     #navbar-mobile a { font-weight:bold; text-decoration:none; color:#fff; padding:20px; display:inline-block; transition:0.3s; width:100%; }
     #navbar-mobile a:hover, #navbar-mobile a:focus { background:rgb(119, 205, 231); }
-    #hamburger-menu { font: normal normal normal 24px/1 FontAwesome; padding:8px; color:white; }
+    #hamburger-menu { font: normal normal normal 28px/1 FontAwesome; padding:8px; color:white; }
     .hero-universal { min-height:500px; display:block; padding:20px; }
     .inner-hero { background:rgba(255, 255, 255, 0.75); border:5px #ccc solid; padding:25px; }
     .router-link-active { background-color: rgb(119, 205, 231); }
@@ -36,7 +36,7 @@ export class XLargeDirective {
     pre { font-size:12px; }
     .footer-navbar-wrapper { background-color:rgb(86, 185, 214); color:white; padding:36px 5%; position:absolute; left:0; bottom:0; right:0; }
     .centered { margin:0 auto; }
-    .navbar-toggle { background-color:rgba(0,0,0,0) !important; border-color:rgba(0,0,0,0) !important; padding:10px; }
+    .navbar-toggle { background-color:rgba(0,0,0,0) !important; border-color:rgba(0,0,0,0) !important; padding:8px; }
   `],
   template: `
   <img itemprop="image" src="../assets/image/roseville_pool_service_logo5.png" alt="Roseville Pool Service">
