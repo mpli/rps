@@ -36,7 +36,7 @@ export class XLargeDirective {
     pre { font-size:12px; }
     .footer-navbar-wrapper { background-color:rgb(86, 185, 214); color:white; padding:36px 5%; position:absolute; left:0; bottom:0; right:0; }
     .centered { margin:0 auto; }
-    .navbar-toggle { background-color:rgba(0,0,0,0) !important; border-color:rgba(0,0,0,0) !important; padding:8px; }
+    .navbar-toggle { background-color:rgba(0,0,0,0) !important; border-color:rgba(0,0,0,0) !important; padding:6px; }
   `],
   template: `
   <img itemprop="image" src="../assets/image/roseville_pool_service_logo5.png" alt="Roseville Pool Service">
