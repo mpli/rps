@@ -56,31 +56,31 @@ export class XLargeDirective {
       <div class="navbar-collapse collapse" id="navbar-mobile">
           <ul class="nav navbar-nav navbar-left">
               <li>
-                <a routerLinkActive="router-link-active" routerLink="home" (click)="burgerButton.click()">Home</a>
+                <a routerLinkActive="router-link-active" routerLink="home" (click)="clickMenuItem(burgerButton)">Home</a>
               </li>
 
               <li>
-                <a routerLinkActive="router-link-active" routerLink="commit" (click)="burgerButton.click()">Commitment</a>
+                <a routerLinkActive="router-link-active" routerLink="commit" (click)="clickMenuItem(burgerButton)">Commitment</a>
               </li>
 
               <li>
-                <a routerLinkActive="router-link-active" routerLink="weekly-services" (click)="burgerButton.click()">Weekly Services</a>
+                <a routerLinkActive="router-link-active" routerLink="weekly-services" (click)="clickMenuItem(burgerButton)">Weekly Services</a>
               </li>
 
               <li>
-                <a routerLinkActive="router-link-active" routerLink="reviews" (click)="burgerButton.click()">Reviews</a>
+                <a routerLinkActive="router-link-active" routerLink="reviews" (click)="clickMenuItem(burgerButton)">Reviews</a>
               </li>
 
               <li>
-                <a routerLinkActive="router-link-active" routerLink="contact-us" (click)="burgerButton.click()">Contact Us</a>
+                <a routerLinkActive="router-link-active" routerLink="contact-us" (click)="clickMenuItem(burgerButton)">Contact Us</a>
               </li>
 
               <li>
-                <a routerLinkActive="router-link-active" routerLink="pool-tips" (click)="burgerButton.click()">Pool Tips</a>
+                <a routerLinkActive="router-link-active" routerLink="pool-tips" (click)="clickMenuItem(burgerButton)">Pool Tips</a>
               </li>
 
               <li>
-                <a routerLinkActive="router-link-active" routerLink="links" (click)="burgerButton.click()">Links</a>
+                <a routerLinkActive="router-link-active" routerLink="links" (click)="clickMenuItem(burgerButton)">Links</a>
               </li>
           </ul>
       </div>
@@ -144,4 +144,10 @@ export class XLargeDirective {
 })
 export class AppComponent {
   title = 'ftw';
+
+  clickMenuItem(menuBtn) {
+    if(window.innerWidth < 768) {
+      menuBtn.click();
+    }
+  }
 }
