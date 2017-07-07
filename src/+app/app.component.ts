@@ -39,7 +39,9 @@ export class XLargeDirective {
     .navbar-toggle { background-color:rgba(0,0,0,0) !important; border-color:rgba(0,0,0,0) !important; padding:6px; }
   `],
   template: `
-  <img itemprop="image" src="../assets/image/roseville_pool_service_logo5.png" alt="Roseville Pool Service">
+  <a routerLink="home">
+    <img itemprop="image" src="../assets/image/roseville_pool_service_logo5.png" alt="Roseville Pool Service">
+  </a>
 
   <div class="navbar navbar-default" id="menu">
       <div class="navbar-header">
