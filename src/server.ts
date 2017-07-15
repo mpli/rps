@@ -40,7 +40,8 @@ app.engine('.html', createEngine({
     // stateless providers only since it's shared
   ]
 }));
-app.set('port', process.env.PORT || 3000);
+// app.set('port', process.env.PORT || 3000);
+app.set('port', 80);
 app.set('views', __dirname);
 app.set('view engine', 'html');
 app.set('json spaces', 2);
