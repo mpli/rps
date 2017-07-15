@@ -94,7 +94,7 @@ function ngApp(req, res) {
       preboot: false,
       baseUrl: '/',
       requestUrl: req.originalUrl,
-      originUrl: `http://104.238.76.150:${ app.get('port') }`
+      originUrl: `http://127.0.0.1:${ app.get('port') }`
     });
   });
 
@@ -118,6 +118,6 @@ app.get('*', function(req, res) {
 
 // Server
 let server = app.listen(app.get('port'), () => {
-  console.log(`Listening on: http://104.238.76.150:${server.address().port}`);
+  console.log(`Listening on: http://127.0.0.1:${server.address().port}`);
 });
 
