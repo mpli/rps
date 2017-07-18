@@ -1,0 +1,36 @@
+{
+    "routes": {
+        "home": {
+            "title": "Roseville Pool Service Inc - Serving Roseville, Rocklin, Granite Bay, CA",
+            "description": "Roseville Pool Service Inc. offers top quality pool service in Roseville, Rocklin and Granite Bay. Call 916 791-1221"
+        },
+        "commit": {
+            "title": "Commitment · Roseville Pool Service Inc - Serving Roseville, Rocklin, Granite Bay, CA",
+            "description": "Roseville Pool Service Inc. offers top quality pool service in Roseville, Rocklin and Granite Bay. Call 916 791-1221"
+        },
+        "weekly-services": {
+            "title": "Weekly Services · Roseville Pool Service Inc - Serving Roseville, Rocklin, Granite Bay, CA",
+            "description": "Roseville Pool Service Inc. offers top quality pool service in Roseville, Rocklin and Granite Bay. Call 916 791-1221"
+        },
+        "reviews": {
+            "title": "Reviews · Roseville Pool Service Inc - Serving Roseville, Rocklin, Granite Bay, CA",
+            "description": "Roseville Pool Service Inc. offers top quality pool service in Roseville, Rocklin and Granite Bay. Call 916 791-1221"
+        },
+        "contact-us": {
+            "title": "Contact Us · Roseville Pool Service Inc - Serving Roseville, Rocklin, Granite Bay, CA",
+            "description": "Roseville Pool Service Inc. offers top quality pool service in Roseville, Rocklin and Granite Bay. Call 916 791-1221"
+        },
+        "pool-tips": {
+            "title": "Pool Tips · Roseville Pool Service Inc - Serving Roseville, Rocklin, Granite Bay, CA",
+            "description": "Roseville Pool Service Inc. offers top quality pool service in Roseville, Rocklin and Granite Bay. Call 916 791-1221"
+        },
+        "links": {
+            "title": "Links · Roseville Pool Service Inc - Serving Roseville, Rocklin, Granite Bay, CA",
+            "description": "Roseville Pool Service Inc. offers top quality pool service in Roseville, Rocklin and Granite Bay. Call 916 791-1221"
+        }
+    },
+
+    "actions": {
+
+    }
+}
