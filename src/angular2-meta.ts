@@ -6,9 +6,10 @@
  * found in the LICENSE file at https://angular.io/license
  */
 
-import {Injectable} from '@angular/core';
+import {Injectable, Inject} from '@angular/core';
 // es6-modules are used here
 import {DomAdapter, getDOM} from '@angular/platform-browser/src/dom/dom_adapter';
+import {DOCUMENT} from '@angular/platform-browser';
 
 /**
  * Represent meta element.
@@ -54,6 +55,24 @@ export interface MetaDefinition {
 @Injectable()
 export class Meta {
   private _dom: DomAdapter = getDOM();
+
+  constructor( @Inject(DOCUMENT) private _document: any) { }
+  /**
+   * Sets the title of the page
+   */
+  setTitle(title: string) {
+    this._document.title = title
+  }
+
+  /**
+   * this.meta.updateMeta('description', 'test'); will  set <meta name="description" content="test">
+   */
+  updateMeta(name, content) {
+    const head = this._document.head;
+    let childNodesAsList = this._dom.childNodesAsList(head);
+    let metaEl = childNodesAsList.find(el => el['attribs'] ? el['attribs'].name == name : false);
+    if (metaEl) metaEl['attribs'].content = content;
+  }
 
   /**
    * Adds a new meta tag to the dom.
