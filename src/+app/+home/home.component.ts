@@ -1,6 +1,5 @@
 import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
-import { Meta } from '../../angular2-meta'
-// import { Title } from '@angular/platform-browser';
+import { MetaService } from '../shared/meta.service'
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Default,
@@ -10,16 +9,7 @@ import { Meta } from '../../angular2-meta'
     templateUrl: './home.component.html'
 })
 export class HomeComponent {
-    // constructor(private titleService: Title ) {
-    //     this.setTitle("Home");
-    // }
-
-    constructor(private meta: Meta) {
-        // this.setTitle("Home");
-        this.meta.setTitle("Home · Roseville Pool Service Inc - Serving Roseville, Rocklin, Granite Bay, CA");
-        this.meta.updateMeta('description', "Roseville Pool Service Inc. offers top quality pool service in Roseville, Rocklin and Granite Bay. Call 916 791-1221");
+    constructor(private metaSrv: MetaService) {
+        this.metaSrv.setRoute('home');
     }
-    // public setTitle( newTitle: string ) {
-    //     this.titleService.setTitle( newTitle );
-    // }
 }

@@ -1,6 +1,6 @@
 import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
 import { Http, RequestOptions, Headers } from '@angular/http';
-import { Meta } from '../../angular2-meta'
+import { MetaService } from '../shared/meta.service'
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Default,
@@ -13,9 +13,8 @@ export class ContactComponent {
 
     status: number = 0;
 
-    constructor(public http: Http, private meta: Meta) {
-        this.meta.setTitle("Contact Us · Roseville Pool Service Inc - Serving Roseville, Rocklin, Granite Bay, CA");
-        this.meta.updateMeta('description', "Roseville Pool Service Inc. offers top quality pool service in Roseville, Rocklin and Granite Bay. Call 916 791-1221");
+    constructor(public http: Http, private metaSrv: MetaService) {
+        this.metaSrv.setRoute('contact-us');
     }
 
     onSubmit(value: any) {

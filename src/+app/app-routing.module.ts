@@ -32,12 +32,13 @@ export class AppRoutingModule {
   //           let url:string = event.url.slice(1);
   //           let title:string = this.meta_data[url].title;
   //           let description:string = this.meta_data[url].description;
+  //           let keywords:string = this.meta_data[url].keywords;
 
   //           this.meta.setTitle(title);
   //           this.meta.updateMeta('description', description);
+  //           this.meta.updateMeta('keywords', keywords);
   //         }
   //       });
-
   //   });
   // }
 }

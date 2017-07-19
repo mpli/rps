@@ -1,32 +1,39 @@
 {
     "routes": {
         "home": {
-            "title": "Home · Roseville Pool Service Inc - Serving Roseville, Rocklin, Granite Bay, CA",
-            "description": "Roseville Pool Service Inc. offers top quality pool service in Roseville, Rocklin and Granite Bay. Call 916 791-1221"
+            "title": "Home · Roseville Pool Service Inc serving Roseville, Rocklin, Granite Bay",
+            "description": "Roseville Pool Service Inc - We deliver top quality pool service to our customers in Roseville, Rocklin and Granite Bay areas. Call 916 791-1221",
+            "keywords": "best pool service, roseville pool service, rocklin pool service, granite bay pool service, pool cleaning, swimming pool maintenance"
         },
         "commit": {
-            "title": "Commitment · Roseville Pool Service Inc - Serving Roseville, Rocklin, Granite Bay, CA",
-            "description": "Roseville Pool Service Inc. offers top quality pool service in Roseville, Rocklin and Granite Bay. Call 916 791-1221"
+            "title": "Commitment · Roseville Pool Service Inc serving Roseville, Rocklin, Granite Bay",
+            "description": "Roseville Pool Service Inc – We are committed to our customers in Roseville, Rocklin and Granite Bay. Call 916 791-1221",
+            "keywords": "commitment, roseville pool service, rocklin pool service, granite bay pool service, pool cleaning, swimming pool maintenance"
         },
         "weekly-services": {
-            "title": "Weekly Services · Roseville Pool Service Inc - Serving Roseville, Rocklin, Granite Bay, CA",
-            "description": "Roseville Pool Service Inc. offers top quality pool service in Roseville, Rocklin and Granite Bay. Call 916 791-1221"
+            "title": "Weekly Services · Roseville Pool Service Inc serving Roseville, Rocklin, Granite Bay",
+            "description": "Roseville Pool Service Inc - Detail description of weekly swimming pool services we offer in Roseville, Rocklin and Granite Bay areas. Call 916 791-1221",
+            "keywords": "weekly pool service, roseville pool service, rocklin pool service, granite bay pool service, pool cleaning, swimming pool maintenance"
         },
         "reviews": {
-            "title": "Reviews · Roseville Pool Service Inc - Serving Roseville, Rocklin, Granite Bay, CA",
-            "description": "Roseville Pool Service Inc. offers top quality pool service in Roseville, Rocklin and Granite Bay. Call 916 791-1221"
+            "title": "Reviews · Roseville Pool Service Inc serving Roseville, Rocklin, Granite Bay",
+            "description": "Roseville Pool Service Inc - Sample of reviews we received from our customers in Roseville, Rocklin and Granite Bay areas. Call 916 791-1221",
+            "keywords": "pool service reviews, roseville pool service, rocklin pool service, granite bay pool service, pool cleaning, swimming pool maintenance"
         },
         "contact-us": {
-            "title": "Contact Us · Roseville Pool Service Inc - Serving Roseville, Rocklin, Granite Bay, CA",
-            "description": "Roseville Pool Service Inc. offers top quality pool service in Roseville, Rocklin and Granite Bay. Call 916 791-1221"
+            "title": "Contact Us · Roseville Pool Service Inc serving Roseville, Rocklin, Granite Bay",
+            "description": "Roseville Pool Service Inc – Contact us for top quality pool service in Roseville, Rocklin and Granite Bay. Call 916 791-1221",
+            "keywords": "contact, roseville pool service, rocklin pool service, granite bay pool service, pool cleaning, swimming pool maintenance"
         },
         "pool-tips": {
-            "title": "Pool Tips · Roseville Pool Service Inc - Serving Roseville, Rocklin, Granite Bay, CA",
-            "description": "Roseville Pool Service Inc. offers top quality pool service in Roseville, Rocklin and Granite Bay. Call 916 791-1221"
+            "title": "Pool Tips · Roseville Pool Service Inc serving Roseville, Rocklin, Granite Bay",
+            "description": "Roseville Pool Service Inc – Tips for your pool in Roseville, Rocklin and Granite Bay. Call 916 791-1221",
+            "keywords": "pool tips, roseville pool service, rocklin pool service, granite bay pool service, pool cleaning, swimming pool maintenance"
         },
         "links": {
-            "title": "Links · Roseville Pool Service Inc - Serving Roseville, Rocklin, Granite Bay, CA",
-            "description": "Roseville Pool Service Inc. offers top quality pool service in Roseville, Rocklin and Granite Bay. Call 916 791-1221"
+            "title": "Links · Roseville Pool Service Inc serving Roseville, Rocklin, Granite Bay",
+            "description": "Roseville Pool Service Inc offers top quality pool service in Roseville, Rocklin and Granite Bay. Call 916 791-1221",
+            "keywords": "pool resources, roseville pool service, rocklin pool service, granite bay pool service, pool cleaning, swimming pool maintenance"
         }
     },
 

@@ -1,31 +1,20 @@
 import { Injectable } from '@angular/core';
-import { ModelService } from '../shared/model/model.service';
 import { Meta } from '../../angular2-meta'
+
+const meta_data = require('../../assets/data/meta.json')
 
 
 @Injectable()
 export class MetaService {
-  meta_data: any = [];
-  loaded:boolean = false;
-
-  constructor(private model: ModelService, private meta: Meta) {
-    this.universalInit();
-  }
+  constructor(private meta: Meta) { }
 
   setRoute(url:string) {
-    while(!this.loaded);
-
-    let title:string = this.meta_data[url].title;
-    let description:string = this.meta_data[url].description;
+    let title:string = meta_data.routes[url].title;
+    let description:string = meta_data.routes[url].description;
+    let keywords:string = meta_data.routes[url].keywords;
 
     this.meta.setTitle(title);
     this.meta.updateMeta('description', description);
-  }
-
-  universalInit() {
-    this.model.get('/assets/data/meta.json').subscribe(data => {
-        this.meta_data = data.routes;
-        this.loaded = true;
-    });
+    this.meta.updateMeta('keywords', keywords);
   }
 }
