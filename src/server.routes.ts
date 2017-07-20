@@ -17,4 +17,5 @@ export const routes: string[] = [
   'contact-us',
   'pool-tips',
   'links',
+  'lazy',
 ];

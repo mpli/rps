@@ -61,6 +61,8 @@ function cacheControl(req, res, next) {
 }
 // Serve static files
 app.use('/assets', cacheControl, express.static(path.join(__dirname, 'assets'), {maxAge: 30}));
+app.use('/sitemap.xml', cacheControl, express.static(path.join(__dirname, 'sitemap.xml'), {maxAge: 30}));
+app.use('/robots.txt', cacheControl, express.static(path.join(__dirname, 'robots.txt'), {maxAge: 30}));
 app.use(cacheControl, express.static(path.join(ROOT, 'dist/client'), {index: false}));
 
 //
