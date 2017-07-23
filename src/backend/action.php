@@ -1,6 +1,11 @@
 <?php
-    header("Content-Type: application/json; charset=UTF-8");
 	header("Access-Control-Allow-Origin: *");
+	if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+		header("Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With");
+		exit();
+	}
+	header("Content-Type: application/json; charset=UTF-8");
+
     $post = json_decode(file_get_contents('php://input'), false);
 	
 	$to      = 'softdev.zeus@gmail.com';
