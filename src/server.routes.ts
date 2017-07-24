@@ -10,6 +10,7 @@
  * ];
  **/
 export const routes: string[] = [
+  'index.html',
   'home',
   'commit',
   'weekly-services',
