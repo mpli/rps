@@ -149,7 +149,7 @@ export function sendMailApi(req, res) {
   smtpTransport.sendMail(mailTo, function (error, info) {
     if (error) {
       console.log("Error sending mail: %s", error);
-      res.json({success:false}).end();
+      res.json({success:false, error}).end();
     } else {
       console.log("Message sent: " + info.messageId, info.response);
       res.json({success:true}).end();
