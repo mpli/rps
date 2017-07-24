@@ -137,13 +137,13 @@ export function sendMailApi(req, res) {
   };
 
   let smtpTransport = nodemailer.createTransport({
-    host: "smtp.gmail.com",
+    host: "mail.rosevillepoolservice.com",
     port: 465,
-    secure: true,
-    auth: {
-      user: "21c.billgeitz@gmail.com",
-      pass: "moonof1986"
-    }
+    // secure: true,
+    // auth: {
+    //   user: "21c.billgeitz@gmail.com",
+    //   pass: "@@@@@"
+    // }
   });
 
   smtpTransport.sendMail(mailTo, function (error, info) {
