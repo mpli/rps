@@ -55,8 +55,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan('dev'));
 
 function cacheControl(req, res, next) {
-  // instruct browser to revalidate in 86400 seconds
-  res.header('Cache-Control', 'max-age=86400');
+  // instruct browser to revalidate in 2592000 seconds
+  res.header('Cache-Control', 'max-age=2592000');
   next();
 }
 // Serve static files
