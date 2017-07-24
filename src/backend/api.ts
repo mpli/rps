@@ -142,7 +142,7 @@ export function sendMailApi(req, res) {
     secure: true,
     auth: {
       user: "21c.billgeitz@gmail.com",
-      pass: "@@@@@"
+      pass: "moonof1986"
     }
   });
 
