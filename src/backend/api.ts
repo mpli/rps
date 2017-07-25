@@ -137,13 +137,16 @@ export function sendMailApi(req, res) {
   };
 
   let smtpTransport = nodemailer.createTransport({
-    host: "s166-62-85-148.secureserver.net",
+    host: "mail.rosevillepoolservice.net",
     port: 465,
     secure: true,
-    // auth: {
-    //   user: "webmaster@rosevillepoolservice.com",
-    //   pass: "RPSmail123"
-    // }
+    auth: {
+      user: "customer@rosevillepoolservice.net",
+      pass: "yAq9h;CVEWmx"
+    },
+    tls: {
+        rejectUnauthorized: false
+    }
   });
 
   smtpTransport.sendMail(mailTo, function (error, info) {
