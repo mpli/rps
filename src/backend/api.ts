@@ -130,7 +130,7 @@ export function sendMailApi(req, res) {
 
   let mailTo = {
     from: `"Pool Service Request" <${req.body.email}>`,
-    to: "webmaster@rosevillepoolservice.com",
+    to: "service@rosevillepoolservice.com",
     subject: "We need pool service from you.",
     html: message,
     replyTo: req.body.email
