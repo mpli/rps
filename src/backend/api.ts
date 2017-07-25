@@ -130,21 +130,20 @@ export function sendMailApi(req, res) {
 
   let mailTo = {
     from: `"Pool Service Request" <${req.body.email}>`,
-    // to: "service@rosevillepoolservice.com",
-    to: "softdev.zeus@gmail.com",
+    to: "webmaster@rosevillepoolservice.com",
     subject: "We need pool service from you.",
     html: message,
     replyTo: req.body.email
   };
 
   let smtpTransport = nodemailer.createTransport({
-    host: "mail.rosevillepoolservice.com",
+    host: "s166-62-85-148.secureserver.net",
     port: 465,
     secure: true,
-    auth: {
-      user: "webmaster@rosevillepoolservice.com",
-      pass: "RPSmail123"
-    }
+    // auth: {
+    //   user: "webmaster@rosevillepoolservice.com",
+    //   pass: "RPSmail123"
+    // }
   });
 
   smtpTransport.sendMail(mailTo, function (error, info) {
