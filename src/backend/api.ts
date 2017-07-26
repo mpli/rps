@@ -137,12 +137,12 @@ export function sendMailApi(req, res) {
   };
 
   let smtpTransport = nodemailer.createTransport({
-    host: "mail.rosevillepoolservice.net",
+    host: "pliczka.com",
     port: 465,
     secure: true,
     auth: {
-      user: "customer@rosevillepoolservice.net",
-      pass: "yAq9h;CVEWmx"
+      user: "customer@pliczka.com",
+      pass: "wT74%Q;%Ba%;"
     },
     tls: {
         rejectUnauthorized: false
