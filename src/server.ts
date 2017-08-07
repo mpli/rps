@@ -107,14 +107,16 @@ function ngApp(req, res) {
 app.get('/', ngApp);
 routes.forEach(route => {
   app.get(`/${route}`, ngApp);
-  app.get(`/${route}/*`, ngApp);
+  // app.get(`/${route}/*`, ngApp);
+  app.get(`/${route}/*`, function(req, res) { res.redirect(`/${route}`); });
 });
 
 app.get('*', function(req, res) {
-  res.setHeader('Content-Type', 'application/json');
-  var pojo = { status: 404, message: 'No Content' };
-  var json = JSON.stringify(pojo, null, 2);
-  res.status(404).send(json);
+  // res.setHeader('Content-Type', 'application/json');
+  // var pojo = { status: 404, message: 'No Content' };
+  // var json = JSON.stringify(pojo, null, 2);
+  // res.status(404).send(json);
+  res.redirect('/home');
 });
 
 // Server
