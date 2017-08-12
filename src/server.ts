@@ -104,6 +104,14 @@ function ngApp(req, res) {
 /**
  * use universal for specific routes
  */
+app.get('/*', function(req, res, next) {
+  if (req.headers.host.match(/^www/) !== null ) {
+    res.redirect(301, 'http://' + req.headers.host.replace(/^www\./, '') + req.url);
+  } else {
+    next();     
+  }
+})
+
 app.get('/', ngApp);
 routes.forEach(route => {
   app.get(`/${route}`, ngApp);
