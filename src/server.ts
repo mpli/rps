@@ -108,8 +108,16 @@ function ngApp(req, res) {
  * use universal for specific routes
  */
 app.get('*', function(req, res, next) {
-  if (req.headers.host.match(/^www/) !== null ) {
+  if (req.headers.host.match(/^www\./) !== null ) {
     res.redirect(301, 'http://' + req.headers.host.replace(/^www\./, '') + req.url);
+  } else {
+    next();
+  }
+})
+
+app.get('*', function(req, res, next) {
+  if (req.headers.host.match(/^roseville\./) !== null ) {
+    res.redirect(301, 'http://' + req.headers.host.replace(/^roseville\./, '') + req.url);
   } else {
     next();
   }
