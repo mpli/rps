@@ -24,6 +24,9 @@ import { MainModule } from './node.module';
 // Routes
 import { routes } from './server.routes';
 
+// Redirection Routes
+import { redirections } from './server.redirection';
+
 // enable prod for faster renders
 enableProdMode();
 
@@ -119,6 +122,10 @@ app.get('*', function(req, res, next) {
     next();
   }
 })
+
+redirections.forEach(redirection => {
+  app.get(`/${redirection.from}/*`, function(req, res) { res.redirect(301, `/${redirection.to}`); });
+});
 
 app.get('/', ngApp);
 routes.forEach(route => {
