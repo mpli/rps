@@ -124,7 +124,7 @@ app.get('*', function(req, res, next) {
 })
 
 redirections.forEach(redirection => {
-  app.get(`/${redirection.from}/*`, function(req, res) { res.redirect(301, `/${redirection.to}`); });
+  app.get(`/${redirection.from}`, function(req, res) { res.redirect(301, `/${redirection.to}`); });
 });
 
 app.get('/', ngApp);
