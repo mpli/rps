@@ -120,7 +120,8 @@ export function sendMailApi(req, res) {
 	message += "<tr><td><strong>Name:</strong> </td><td>" + striptags(req.body.name) + "</td></tr>";
 	message += "<tr><td><strong>Email:</strong> </td><td>" + striptags(req.body.email) + "</td></tr>";
 	message += "<tr><td><strong>Phone Number:</strong> </td><td>" + striptags(req.body.phone) + "</td></tr>";
-	message += "<tr><td><strong>Address:</strong> </td><td>" + striptags(req.body.address) + "</td></tr>";
+  message += "<tr><td><strong>Address:</strong> </td><td>" + striptags(req.body.address) + "</td></tr>";
+  message += "<tr><td><strong>City:</strong> </td><td>" + striptags(req.body.city) + "</td></tr>";
 	message += "<tr><td><strong>Service type:</strong> </td><td>" + striptags(req.body.service_type) + "</td></tr>";
 	message += "<tr><td><strong>Notes:</strong> </td><td>" + striptags(req.body.note) + "</td></tr>";
 	message += "</table>";
