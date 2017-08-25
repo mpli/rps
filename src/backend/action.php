@@ -23,6 +23,7 @@
 	$message .= "<tr><td><strong>Email:</strong> </td><td>" . strip_tags($post->email) . "</td></tr>";
 	$message .= "<tr><td><strong>Phone Number:</strong> </td><td>" . strip_tags($post->phone) . "</td></tr>";
 	$message .= "<tr><td><strong>Address:</strong> </td><td>" . strip_tags($post->address) . "</td></tr>";
+	$message .= "<tr><td><strong>Address:</strong> </td><td>" . strip_tags($post->city) . "</td></tr>";
 	$message .= "<tr><td><strong>Service type:</strong> </td><td>" . strip_tags($post->service_type) . "</td></tr>";
 	$message .= "<tr><td><strong>Notes:</strong> </td><td>" . strip_tags($post->note) . "</td></tr>";
 	$message .= "</table>";

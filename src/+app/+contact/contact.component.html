@@ -11,17 +11,29 @@
         <div class="form-group">
           <label for="name" class="col-sm-2 control-label">Name <span class="text-danger">*</span></label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="name" name="name" placeholder="Marian Pliczka" ngModel required>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Tom Pliczka" ngModel required>
           </div>
         </div>
 
         <div class="form-group">
           <label for="address" class="col-sm-2 control-label">Address</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="address" name="address" placeholder="1003 Topaz Ct., Roseville, CA 95661" ngModel>
+            <input type="text" class="form-control" id="address" name="address" placeholder="1003 Topaz Ct." ngModel>
           </div>
         </div>
-
+        
+        <div class="form-group">
+          <label for="city" class="col-sm-2 control-label">City <span class="text-danger">*</span></label>
+          <div class="col-sm-10">
+            <select class="form-control" id="city" name="city" ngModel required>
+              <option selected>Roseville</option>
+              <option>Rocklin</option>
+              <option>Granite Bay</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        
         <div class="form-group">
           <label for="email" class="col-sm-2 control-label">Email <span class="text-danger">*</span></label>
           <div class="col-sm-10">
