@@ -16,7 +16,7 @@
       </div>
     </div>
        
-    <div class="col-xs-12 col-sm-7">
+    <div class="col-xs-12 col-sm-7" #scrollElement>
       <div *ngFor="let review of reviews; let i = index" [style.display]="selectedReviewID==review.reviewID ? 'block':'none'" class="panel panel-primary">
         <div class="panel-heading">
           <h3 class="panel-title">{{ review.serviceName }}</h3>

@@ -33,7 +33,7 @@
               </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6">
+            <div class="col-xs-12 col-sm-6" #scrollElement>
               <div *ngFor="let service of services; let i = index" [style.display]="selectedServiceID==service.serviceID ? 'block':'none'">
                 <h3>{{ service.serviceName }}</h3>
                 <div [innerHTML]="service.serviceDescription"></div>

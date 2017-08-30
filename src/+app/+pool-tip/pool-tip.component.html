@@ -16,7 +16,7 @@
       </div>
     </div>
        
-    <div class="col-xs-12 col-sm-7">
+    <div class="col-xs-12 col-sm-7" #scrollElement>
       <div *ngFor="let poolTip of poolTips; let i = index" [style.display]="selectedPoolTipID==poolTip.poolTipID ? 'block':'none'" class="panel panel-primary">
         <div class="panel-heading">
           <h3 class="panel-title">{{ poolTip.poolTipName }}</h3>

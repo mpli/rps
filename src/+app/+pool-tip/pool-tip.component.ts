@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
+import { Component, ChangeDetectionStrategy, ViewEncapsulation, ViewChild, ElementRef } from '@angular/core';
 
 import { ModelService } from '../shared/model/model.service';
 import { MetaService } from '../shared/meta.service'
@@ -13,6 +13,7 @@ import { MetaService } from '../shared/meta.service'
 export class PoolTipComponent {
     poolTips: any = [];
     selectedPoolTipID: any = null;
+    @ViewChild('scrollElement') el: ElementRef;
 
     constructor(public model: ModelService, private metaSrv: MetaService) {
         this.metaSrv.setRoute('pool-tips');
@@ -27,7 +28,13 @@ export class PoolTipComponent {
     }
 
     setSelectedPoolTip(poolTipID) {
+        if( this.selectedPoolTipID == poolTipID) {
+            this.selectedPoolTipID = -1;
+            return;
+        }
+        
         this.selectedPoolTipID = poolTipID;
+        setTimeout(() => this.el.nativeElement.scrollIntoView({behavior: "smooth", block: "start"}), 100);
     }
 
     isSelected(poolTipID) {
