@@ -1,7 +1,7 @@
 <div class="container">
   <div class="panel-group" id="accordion">
     <div class="panel panel-default">
-      <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+      <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" #collapse1 (click)="focusElement(collapse1)">
         <h4 class="panel-title">
           Services
         </h4>
@@ -50,7 +50,7 @@
     </div>
 
     <div class="panel panel-default">
-      <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+      <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse2" #collapse2 (click)="focusElement(collapse2)">
         <h4 class="panel-title">
           Pricing Note
         </h4>
@@ -67,7 +67,7 @@
     </div>
 
     <div class="panel panel-default">
-        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse3" #collapse3 (click)="focusElement(collapse3)">
           <h4 class="panel-title">
             Service Note
           </h4>
@@ -85,7 +85,7 @@
     </div>
 
     <div class="panel panel-default">
-      <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+      <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse4" #collapse4 (click)="focusElement(collapse4)">
         <h4 class="panel-title">
           Holiday Policy
         </h4>
@@ -140,7 +140,7 @@
     </div>
 
     <div class="panel panel-default">
-      <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+      <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse5" #collapse5 (click)="focusElement(collapse5)">
         <h4 class="panel-title">
           Vacation Policy
         </h4>

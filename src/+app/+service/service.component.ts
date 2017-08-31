@@ -40,4 +40,10 @@ export class ServiceComponent {
     isSelected(serviceID) {
         return this.selectedServiceID == serviceID;
     }
+
+    focusElement(e) {
+        if (e.getAttribute('aria-expanded') != 'true') {
+            setTimeout(() => e.scrollIntoView({behavior: "smooth", block: "start"}), 400);
+        }
+    }
 }
