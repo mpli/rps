@@ -49,7 +49,9 @@ export class XLargeDirective {
           <ul class="nav navbar-nav pull-right visible-xs-block">
               <li>
                 <button #burgerButton class="navbar-toggle" data-toggle="collapse" data-target="#navbar-mobile" type="button">
-                  <i class="fa fa-bars" id="hamburger-menu" aria-hidden="true"></i>
+                  <i class="fa fa-bars" id="hamburger-menu" aria-hidden="true">
+                    <span style="font-family: 'Droid Sans',sans-serif; font-size: 22px"> Menu </span>
+                  </i>
                 </button>
               </li>
           </ul>
