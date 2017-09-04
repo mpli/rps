@@ -8,8 +8,8 @@
 						"serviceName" : "Chemical Only Service",
 						"servicePrice" : "65.00",
 						"billPeriod" : "Monthly",
-						"serviceDescription" : "<p>Having proper chemical balance is important to maintain the life of your equipment and the health of your family. Instead of buying stockpiles of chemicals and test kits, you can let us maintain the chemical balance of your pool through weekly testing and adjustment. <strong>For only $65 \/ month<\/strong>, each week we will:<\/p>"
-						,
+						"serviceDescription" : "<p>Having proper chemical balance is important to maintain the life of your equipment and the health of your family. Instead of buying stockpiles of chemicals and test kits, you can let us maintain the chemical balance of your pool through weekly testing and adjustment. <strong>For only $65 \/ month<\/strong>, each week we will:<\/p>",
+						"serviceNotes" : "",
 						"serviceDetails" :
 							{
 								"serviceDetail" :
