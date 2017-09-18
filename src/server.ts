@@ -150,6 +150,12 @@ app.get('*', function(req, res) {
   res.redirect(301, '/home');
 });
 
+app.get('*', function(req, res) {
+  if (req.protocol == "http") {
+    res.redirect(301, 'https://' + req.hostname + req.url);
+  }
+});
+
 // Server
 let server = app.listen(app.get('port'), () => {
   console.log(`Listening on: http://localhost:${server.address().port}`);
