@@ -104,12 +104,6 @@ function ngApp(req, res) {
 
 }
 
-// from http to https
-app.get('*', function(req, res) {
-  if (req.protocol == "http") {
-    res.redirect(301, 'https://' + req.hostname + req.url);
-  }
-});
 /**
  * use universal for specific routes
  */
