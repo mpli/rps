@@ -104,6 +104,12 @@ function ngApp(req, res) {
 
 }
 
+// from http to https
+app.get('*', function(req, res) {
+  if (req.protocol == "http") {
+    res.redirect(301, 'https://' + req.hostname + req.url);
+  }
+});
 /**
  * use universal for specific routes
  */
@@ -148,12 +154,6 @@ app.get('*', function(req, res) {
   // var json = JSON.stringify(pojo, null, 2);
   // res.status(404).send(json);
   res.redirect(301, '/home');
-});
-
-app.get('*', function(req, res) {
-  if (req.protocol == "http") {
-    res.redirect(301, 'https://' + req.hostname + req.url);
-  }
 });
 
 // Server
