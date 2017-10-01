@@ -22,7 +22,7 @@ export class ContactComponent {
         let params = JSON.stringify(value);
         let headers = new Headers({"Content-Type": "application/json"});
         let options = new RequestOptions({headers: headers});
-        // this.http.post("http://rosevillepoolservice.net/action.php", params, options).subscribe(res => {
+        // this.http.post("https://rosevillepoolservice.net/action.php", params, options).subscribe(res => {
         this.http.post("/api/send", params, options).subscribe(res => {
             console.log(res.text());
             if(JSON.parse(res.text()).success) {

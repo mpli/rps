@@ -109,7 +109,7 @@ function ngApp(req, res) {
  */
 app.get('*', function(req, res, next) {
   if (req.headers.host.match(/^www\./) !== null ) {
-    res.redirect(301, 'http://' + req.headers.host.replace(/^www\./, '') + req.url);
+    res.redirect(301, 'https://' + req.headers.host.replace(/^www\./, '') + req.url);
   } else {
     next();
   }
@@ -117,7 +117,7 @@ app.get('*', function(req, res, next) {
 
 app.get('*', function(req, res, next) {
   if (req.headers.host.match(/^roseville\./) !== null ) {
-    res.redirect(301, 'http://' + req.headers.host.replace(/^roseville\./, '') + req.url);
+    res.redirect(301, 'https://' + req.headers.host.replace(/^roseville\./, '') + req.url);
   } else {
     next();
   }
@@ -125,7 +125,7 @@ app.get('*', function(req, res, next) {
 
 // app.get('*', function(req, res, next) {
 //   if (req.headers.host.match(/^rosevillepoolservice\.net/) !== null ) {
-//     res.redirect(301, 'http://' + req.headers.host.replace(/^rosevillepoolservice\.net/, 'rosevillepoolservice.com') + req.url);
+//     res.redirect(301, 'https://' + req.headers.host.replace(/^rosevillepoolservice\.net/, 'rosevillepoolservice.com') + req.url);
 //   } else {
 //     next();
 //   }
