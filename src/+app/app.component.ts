@@ -138,7 +138,7 @@ export class XLargeDirective {
               <a href="https://www.linkedin.com/company/roseville-pool-service" target="_self"><span class="glyphicon glyphicon-lg air-icon-social-linkedin"></span></a>
             </div>
             <p class="text-center copyright">
-              <b> © 2017 Roseville Pool Service </b>
+              <b> © 2004 - 2017 Roseville Pool Service </b>
             </p>
           </div>
         </div>
