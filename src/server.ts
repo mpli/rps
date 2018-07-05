@@ -123,13 +123,13 @@ app.get('*', function(req, res, next) {
   }
 })
 
-// app.get('*', function(req, res, next) {
-//   if (req.headers.host.match(/^rosevillepoolservice\.net/) !== null ) {
-//     res.redirect(301, 'https://' + req.headers.host.replace(/^rosevillepoolservice\.net/, 'rosevillepoolservice.com') + req.url);
-//   } else {
-//     next();
-//   }
-// })
+app.get('*', function(req, res, next) {
+   if (req.headers.host.match(/^rosevillepoolservice\.net/) !== null ) {
+     res.redirect(301, 'https://' + req.headers.host.replace(/^rosevillepoolservice\.net/, 'rosevillepoolservice.com') + req.url);
+   } else {
+     next();
+   }
+ })
 
 redirections.forEach(redirection => {
   app.get(`/${redirection.from}`, function(req, res) { res.redirect(301, `/${redirection.to}`); });
